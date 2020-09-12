@@ -1,0 +1,19 @@
+﻿<Window x:Class="Methoden5.SalePriceCalculator.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Methoden5.SalePriceCalculator.WPF"
+        mc:Ignorable="d"
+        Title="Sale price calculator" Height="450" Width="800">
+    <Grid>
+        <Label Content="Standaard verkoopprijs : " HorizontalAlignment="Left" Height="34" Margin="37,34,0,0" VerticalAlignment="Top" Width="142"/>
+        <TextBox x:Name="txtDefaultSalePrice" HorizontalAlignment="Left" Height="17" Margin="195,42,0,0" Text="499,99" TextAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Top" Width="108"/>
+        <RadioButton x:Name="rdbEndUser" Content="Eindgebruiker" HorizontalAlignment="Left" Height="21" Margin="37,92,0,0" VerticalAlignment="Top" Width="182" Checked="rdbEndUser_Checked"/>
+        <RadioButton x:Name="rdbShopOwner" Content="Winkelier" HorizontalAlignment="Left" Height="21" Margin="37,118,0,0" VerticalAlignment="Top" Width="182" Checked="rdbShopOwner_Checked"/>
+        <RadioButton x:Name="rdbWholeSaler" Content="Groothandelaar" HorizontalAlignment="Left" Height="21" Margin="37,144,0,0" VerticalAlignment="Top" Width="182" Checked="rdbWholeSaler_Checked"/>
+        <Label Content="Aan te rekenen prijs : " HorizontalAlignment="Left" Height="36" Margin="344,92,0,0" VerticalAlignment="Top" Width="152"/>
+        <Label x:Name="lblSalePrice" Content="" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="36" Margin="512,92,0,0" VerticalAlignment="Top" Width="180" Background="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Foreground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" FontSize="22"/>
+
+    </Grid>
+</Window>
